@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<com.google.ads.AdView android:id="@+id/adView"
+		android:layout_alignParentTop="true" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" ads:adUnitId="a14e284197a966d"
+		ads:adSize="BANNER" ads:loadAdOnCreate="true" />
+	<TableRow android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:id="@+id/tableButtonsRow" android:layout_alignParentTop="true"
+		android:visibility="visible" android:layout_gravity="bottom"> 
+		<Button android:text="New" android:id="@+id/resetButton"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	<Spinner android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/difficultyspin" />
+		<Button android:text="Comet" android:id="@+id/loadButton"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		<Button android:text="Ship" android:id="@+id/shipButton"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		<CheckBox android:text="↑↓" android:id="@+id/checkBox1" android:layout_width="wrap_content" android:layout_height="wrap_content"></CheckBox>
+
+	</TableRow>
+
+	<com.hunterdavis.customcomets.Panel
+		android:id="@+id/SurfaceView01" android:layout_width="fill_parent"
+
+		android:layout_height="fill_parent">
+	</com.hunterdavis.customcomets.Panel>
+
+</LinearLayout>
